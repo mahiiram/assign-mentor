@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
+const env = require("dotenv").config();
 
-const DB = `mongodb+srv://user2000:user123@cluster0.zdfnqjl.mongodb.net/Assign-mentor`
 
-mongoose.connect(DB)
+mongoose.connect(process.env.DB)
 
 
