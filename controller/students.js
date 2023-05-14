@@ -2,12 +2,6 @@ const student_Router = require("express").Router();
 // const { response } = require("../app");
 const studentmodel = require("./model/studentmodel");
 
-student_Router.get("/students",  (req,res,next)=>{
-    res.status(200).json({
-        message:"student server started"
-    })
-})
-
 student_Router.post('/createstudent', (req,res,next)=>{
     // console.log(req.body)
    const {

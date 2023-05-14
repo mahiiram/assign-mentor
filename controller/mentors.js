@@ -2,11 +2,6 @@ const mentormodel = require("./model/mentormodel");
 
 const mentor_Router = require("express").Router();
 
-mentor_Router.get("/mentor",  (req,res,next)=>{
-    res.status(200).json({
-        message:"mentor server started"
-    })
-})
 mentor_Router.post('/creatementor', (req,res,next)=>{
     // console.log(req.body)
    const {
