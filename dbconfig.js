@@ -1,3 +1,7 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://127.0.0.1:27017/zenclone');
+const DB = `mongodb+srv://user2000:user123@cluster0.zdfnqjl.mongodb.net/Assign-mentor`
+
+mongoose.connect(DB)
+
+

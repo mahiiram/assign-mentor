@@ -56,7 +56,7 @@ student_Router.post('/createstudent', (req,res,next)=>{
 student_Router.get("/students/findbymentor",  (req,res,next)=>{
     studentmodel.aggregate([
       {
-        $match:{mentors:{$elemMatch:{$and:[{Name:"vishnu"}]}}}
+        $match:{mentors:{$elemMatch:{$and:[{Name:"Ruban"}]}}}
       },
       {
         $project:{
